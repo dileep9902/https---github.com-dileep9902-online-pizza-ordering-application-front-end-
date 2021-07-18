@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import { Card } from 'react-bootstrap';
-import pizza3 from "../images/pizza3.jpg"
+import pizza5 from "../images/pizza5.jpg";
 class Image extends Component {
     state = {  }
     render() { 
         return ( 
-            <Card className="bg-dark text-white" style={{marginTop:"35px"}}>
-  <Card.Img src={pizza3} alt="Card image" />
+            <Card className="bg-dark text-white" style={{marginTop:"66px"}}>
+  <Card.Img src={pizza5} alt="Card image" height="600px" width="1500px"/>
   <Card.ImgOverlay>
     <Card.Title>Card title</Card.Title>
     <Card.Text>

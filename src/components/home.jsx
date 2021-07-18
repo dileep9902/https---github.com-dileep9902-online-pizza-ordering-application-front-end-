@@ -2,7 +2,8 @@ import React ,{useState} from 'react';
 import { Carousel } from 'react-bootstrap';
 import pizza2 from "../images/pizza2.jpg";
 import pizza3 from "../images/pizza3.jpg";
-import delivery1 from "../images/delivery1.jpg";
+import delivery1 from "../images/delivery1.jpg"
+import Image from './image';
 
 function ControlledCarousel() {
   const [index, setIndex] = useState(0);
@@ -12,10 +13,14 @@ function ControlledCarousel() {
   };
 
   return (
-    <Carousel activeIndex={index} onSelect={handleSelect} style={{marginTop:"65px"}}>
+    <div>
+      <div>
+        <Image />
+      </div>
+    <Carousel activeIndex={index} onSelect={handleSelect} style={{width:"100%"}}>
       <Carousel.Item>
         <img
-          className="d-block w-100"
+          className=" w-100"
           src={pizza2}
           height="600px"
           alt="First slide"
@@ -54,6 +59,7 @@ function ControlledCarousel() {
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
+    </div>
   );
 }
 

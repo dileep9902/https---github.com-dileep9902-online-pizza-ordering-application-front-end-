@@ -48,9 +48,6 @@ class Addcustomer extends Component {
       }else if(!/^[0-9]{10}$/i.test(custData.customerMobile)) {
         errors.customerMobile='customer Mobile number Should be 10 Digits';
       } 
-      // else  if(custData.customerMobile.filter((x) => x.customerMobile == custData.customerMobile)){
-      //   errors.customerMobile='mobile number is already exists'
-      // }
      
       if (!custData.customerEmail) {
         errors.customerEmail = 'customer Email cannot be empty';
@@ -86,7 +83,7 @@ class Addcustomer extends Component {
 
     render() { 
         return ( 
-            <div>
+            <div style={{backgroundColor:"snow"}}>
             <Grid
             item
             md={5}
